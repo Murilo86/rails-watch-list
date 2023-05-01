@@ -1,0 +1,6 @@
+<p>Test Message</p>
+ <%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment%>
+  <%= f.association :movie %>
+  <%= f.submit #link_to "Create bookmark", list_bookmarks(list_id), class: "apt-btn" % %>
+  <% end %>

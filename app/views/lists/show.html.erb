@@ -1,0 +1,6 @@
+<p> Welcome to  <%= @list.name %> list</p>
+
+
+<%= @list.name%>
+
+<%= link_to "Add a Movie to this list", new_list_bookmark_path(@list.id), class: "btn btn-secondary" %>

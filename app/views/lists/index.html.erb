@@ -1,9 +1,14 @@
+<p> List of Movies</p>
 
-<p> Test Message</p>
-<ul>
+
+<div class="grid">
 <% @lists.each do |list| %>
-<li> <%= list.name %> </li>
+ <div class="listcard"><%=  link_to list.name, list_path(list.id) %></div>
 <% end %>
 
 
-</ul>
+</div>
+<%= link_to "Add a List",new_list_path, class: "btn btn-primary" %>
+
+
+

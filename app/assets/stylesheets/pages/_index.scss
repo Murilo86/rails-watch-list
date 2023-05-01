@@ -1,2 +1,16 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 26px;
+}
+
+
+ .btn-primary {
+  color:red;
+  display:grid;
+  display:center;
+ }

@@ -1,1 +1,9 @@
-<p>Test Message</p>
+<div style="background-color: red;">Create a new List</div>
+
+<div class="info-visual-container mt-3">
+  <%= form_with model: @list, method: :post do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+  </div>
+<% end %>
